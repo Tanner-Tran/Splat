@@ -1,0 +1,40 @@
+header h2 {
+    font-weight: bold;
+}
+
+header {
+    height: 50px;
+}
+
+.review {
+    border-top: 1px;
+    border-style: solid;
+    border-color: black;
+    padding-top: 13px;
+    display: flex;
+    flex-flow: column;
+}
+
+html {
+    visibility: hidden;
+}
+
+.reviewHeader {
+    display: flex;
+    flex-flow: row;
+    height: 35px;
+}
+
+.reviewDate {
+    margin-left: auto;
+}
+
+.reviewBody {
+    font-size: 20px;
+	word-wrap: break-word;
+}
+
+.reviewBody p{
+    margin-bottom: auto;
+}
+

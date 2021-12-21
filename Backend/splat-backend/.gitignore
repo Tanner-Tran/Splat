@@ -1,0 +1,33 @@
+g# IDE settings
+.idea/
+
+# Compiled class file
+*.class
+
+# Logs
+logs/
+*.log
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zipgit
+*.tar.gz
+*.rar
+
+*.iml
+.classpath
+.project
+.settings/
+target/
+
+
+# Sensitive files
+/src/main/jib/configuration.yml
+/src/main/jib/firebase.json
+/configuration.yml
+/firebase.json
+/dependency-reduced-pom.xml
+/.gcloudignore
