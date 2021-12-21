@@ -8,4 +8,4 @@ automatic_scaling:
    
 resources:
   cpu: 1
-  memory_gb: 4
+  memory_gb: 2

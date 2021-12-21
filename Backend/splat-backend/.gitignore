@@ -27,7 +27,9 @@ target/
 # Sensitive files
 /src/main/jib/configuration.yml
 /src/main/jib/firebase.json
+/src/main/jib/ssl.jks
 /configuration.yml
 /firebase.json
+/ssl.jksgi
 /dependency-reduced-pom.xml
 /.gcloudignore
