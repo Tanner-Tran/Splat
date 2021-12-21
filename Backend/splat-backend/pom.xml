@@ -78,7 +78,7 @@
                 <version>3.1.4</version>
                 <configuration>
                     <from>
-                        <image>gcr.io/google-appengine/openjdk@sha256:c12812974ad966167f5ec267f0ef663ed1b5d315baad4c658a0da875f1b46f4e</image>
+                        <image>gcr.io/google-appengine/openjdk:8</image>
                     </from>
                     <to>
                         <image>gcr.io/splat-ce92b/jigsplatapi</image>
