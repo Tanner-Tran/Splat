@@ -53,7 +53,7 @@ auth.onIdTokenChanged(function(user) {
     document.getElementsByTagName('title')[0].innerHTML = toTitleCase(showRestName);
     document.getElementById('restTitle').innerHTML = showRestName;
 
-    fetch('https://splat-ce92b.ue.r.appspot.com/reviews/restaurant?restName=' + restName, {
+    fetch('https://splat.azurewebsites.net/reviews/restaurant?restName=' + restName, {
       method: 'GET', 
       headers: {
           'Content-Type': 'application/json',

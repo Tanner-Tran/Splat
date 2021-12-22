@@ -40,7 +40,7 @@ auth.onIdTokenChanged(function(user) {
 function renderBody() {
    let sessionToken = auth.currentUser.accessToken;
 
-   fetch('https://splat-ce92b.ue.r.appspot.com/reviews/personal?sessionToken=' + sessionToken, {
+   fetch('https://splat.azurewebsites.net/reviews/personal?sessionToken=' + sessionToken, {
     method: 'GET', 
     headers: {
         'Content-Type': 'application/json',
@@ -90,7 +90,7 @@ window.deleteReview = function deleteReview(restName) {
       "restName": restName
   }
 
-  fetch('https://splat-ce92b.ue.r.appspot.com/reviews/deleteReview', {
+  fetch('https://splat.azurewebsites.net/reviews/deleteReview', {
   method: 'POST', 
   headers: {
       'Content-Type': 'application/json',

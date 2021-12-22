@@ -92,7 +92,7 @@ window.editReview = function editReview() {
       "restName": restName
   }
 
-  fetch('https://splat-ce92b.ue.r.appspot.com/reviews/updateReview', {
+  fetch('https://splat.azurewebsites.net/reviews/updateReview', {
   method: 'PUT', 
   headers: {
       'Content-Type': 'application/json',

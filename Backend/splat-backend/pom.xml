@@ -78,10 +78,10 @@
                 <version>3.1.4</version>
                 <configuration>
                     <from>
-                        <image>gcr.io/google-appengine/openjdk:8</image>
+                        <image>openjdk:8u312-slim-buster@sha256:39e8c30a4d2f9bec37c26d9ac16581e8ce78414c38e479a3c85188fc68718292</image>
                     </from>
                     <to>
-                        <image>gcr.io/splat-ce92b/jigsplatapi</image>
+                        <image>tanneretran/splat:jigsplat</image>
                     </to>
                     <container>
                         <mainClass>com.splat.main.ServiceApplication</mainClass>

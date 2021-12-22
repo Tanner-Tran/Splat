@@ -66,7 +66,7 @@ window.addReview = function addReview() {
       "restName": restName
   }
 
-  fetch('https://splat-ce92b.ue.r.appspot.com/reviews/addReview', {
+  fetch('https://splat.azurewebsites.net/reviews/addReview', {
   method: 'POST', 
   headers: {
       'Content-Type': 'application/json',

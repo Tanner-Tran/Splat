@@ -42,7 +42,7 @@ auth.onIdTokenChanged(function(user) {
 
 
   function renderBody() {
-    fetch('https://splat-ce92b.ue.r.appspot.com/reviews/recent', {
+    fetch('https://splat.azurewebsites.net/reviews/recent', {
       method: 'GET', 
       headers: {
           'Content-Type': 'application/json',

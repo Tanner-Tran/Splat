@@ -32,7 +32,7 @@ window.registerAccount = function registerAccount() {
                 "password": password
             }
 
-            fetch('https://splat-ce92b.ue.r.appspot.com/accounts/register', {
+            fetch('https://splat.azurewebsites.net/accounts/register', {
             method: 'POST', 
             headers: {
                 'Content-Type': 'application/json',

@@ -1,7 +1,7 @@
 window.searchRest = function searchRest() {
     let restName = document.getElementById("searchtext").value;
 
-  fetch('https://splat-ce92b.ue.r.appspot.com/restaurants?restName=' + restName, {
+  fetch('https://splat.azurewebsites.net/restaurants?restName=' + restName, {
     method: 'GET', 
     headers: {
         'Content-Type': 'application/json',
