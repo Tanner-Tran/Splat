@@ -95,6 +95,7 @@
 
                         <jvmFlags>
                             <jvmFlag>-server</jvmFlag>
+                            <jvmFlag>-Djdk.tls.client.protocols=TLSv1.2</jvmFlag>
                             <jvmFlag>-Djava.awt.headless=true</jvmFlag>
                             <jvmFlag>-XX:InitialRAMFraction=2</jvmFlag>
                             <jvmFlag>-XX:MinRAMFraction=2</jvmFlag>
