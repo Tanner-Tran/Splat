@@ -1,8 +1,10 @@
 package com.splat.main;
 
+import com.codahale.metrics.health.HealthCheckRegistry;
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
+import com.splat.controller.HealthCheckController;
 import com.splat.controller.RestaurantController;
 import com.splat.controller.ReviewsController;
 import com.splat.data.DAO.AccountDAO;
@@ -76,16 +78,19 @@ public class ServiceApplication extends Application<ServiceConfiguration> {
         // Add URL mapping
         cors.addMappingForUrlPatterns(EnumSet.allOf(DispatcherType.class), true, "/*");
 
-        // Build and register a resource
+        // Build and register resources
         AccountDAO accountDAO = new AccountDAO(jdbi);
         AccountsService accountsService = new AccountsService(accountDAO);
-        env.jersey().register(new AccountsController(accountsService));
 
         ReviewDAO reviewDAO = new ReviewDAO(jdbi);
         RestaurantDAO restaurantDAO = new RestaurantDAO(jdbi);
         ReviewsService reviewsService = new ReviewsService(reviewDAO, restaurantDAO);
-        env.jersey().register(new ReviewsController(reviewsService));
 
+        HealthCheckRegistry registry = new HealthCheckRegistry();
+
+        env.jersey().register(new AccountsController(accountsService));
+        env.jersey().register(new ReviewsController(reviewsService));
         env.jersey().register(new RestaurantController(restaurantDAO));
+        env.jersey().register(new HealthCheckController(registry));
     }
 }
