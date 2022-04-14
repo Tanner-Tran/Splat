@@ -95,10 +95,7 @@
 
                         <jvmFlags>
                             <jvmFlag>-server</jvmFlag>
-                            <jvmFlag>-Djdk.tls.client.protocols=TLSv1.2</jvmFlag>
                             <jvmFlag>-XX:+UseContainerSupport</jvmFlag>
-                            <jvmFlag>-XX:InitialRAMPercentage=50.0</jvmFlag>
-                            <jvmFlag>-XX:MaxRAMPercentage=80.0</jvmFlag>
                         </jvmFlags>
                     </container>
                 </configuration>
